@@ -16,8 +16,8 @@ using Microsoft.Extensions.FileProviders;
 
 namespace DotNetCoreIdentity.Web.CMS.Controllers
 {
-    //[Authorize(Roles = "Admin,Editor")]
-    //[Area("CMS")]
+    [Authorize(Roles = "Admin,Editor")]
+    [Area("CMS")]
     public class PostController : Controller
     {
         private readonly IPostService _postService;

@@ -12,9 +12,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DotNetCoreIdentity.Web.Account.Controllers
 {
-   //[Authorize(Roles = "Admin")]
-   // [Route("Manage")]
-   // [Area("Account")]
+    [Authorize(Roles = "Admin")]
+    [Route("Manage")]
+    [Area("Account")]
     public class ManageController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

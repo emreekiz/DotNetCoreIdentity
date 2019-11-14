@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetCoreIdentity.Web.Areas.Account.Controllers
 {
-    //[Area("Account")]
+    [Area("Account")]
     public class AccountController : Controller
     {
         // Kullanici kaydetmek icin veya kullanici bilgilerinde degisiklik yapmak icin kullanilan servis.
